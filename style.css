@@ -117,6 +117,9 @@ button {
   font-size: 1.1rem;
   border-radius: 10px;
 }
+button:active{
+    background: rgba(46, 107, 63, 0.815);
+}
 .login {
   margin: 30px 55px;
   font-family: var(--primary-font);
