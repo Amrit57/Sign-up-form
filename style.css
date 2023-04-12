@@ -1,68 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&family=Sedgwick+Ave+Display&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&family=Sedgwick+Ave+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --logo-font:'Sedgwick Ave Display', sans-serif;
-    --primary-font: 'Schibsted Grotesk', sans-serif;
+:root {
+  --logo-font: "Sedgwick Ave Display", sans-serif;
+  --primary-font: "Schibsted Grotesk", sans-serif;
 }
 
+main {
+  display: flex;
+  background: linear-gradient(rgba(26, 70, 38, 0.815), rgb(29, 29, 31));
+}
+.logo {
+  padding: 10px;
+  background: #1b19198a;
+  position: relative;
+  top: 20%;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--logo-font);
+}
+.s-wrapper {
+  font-family: var(--logo-font);
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  background-color: #1b1919d7;
+  left: 20%;
+  font-size: 1.2rem;
+}
+a {
+  color: white;
+  font-size: 1.2rem;
+}
+img {
+  height: 150px;
+}
+.left-side {
+  font-family: var(--primary-font);
+  color: white;
+  position: relative;
+  width: 40%;
+  height: 100vh;
+  background: url(lexi-laginess-XYfjIT9c01Q-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right-side {
+  font-family: var(--primary-font);
+  width: 60%;
+  color: white;
+}
+.some-text {
+  margin: 40px;
+  font-size: 1.2rem;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+form {
+  margin: 10px 0px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.9rem;
+  width: 100%;
+  justify-items: center;
+  border-radius: 10px;
+}
+form div {
+  width: 280px;
+  margin: 5px 0px;
+  box-shadow: 0px 2px rgb(29, 29, 31);
+  padding: 10px 40px;
+}
+label {
+  text-transform: uppercase;
+}
 
+input {
+  display: block;
+  margin: 3px 0px;
+  padding: 8px;
+  font-size: 1.02rem;
+  border-radius: 5px;
+  background: rgba(245, 245, 245, 0.829);
+}
+input:focus {
+  background: white;
+  border: 2px solid blue;
+  outline: blue;
+}
+input[type="password"]:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+button {
+  width: 280px;
+  padding: 20px 5px;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer;
+  background: rgba(34, 94, 50, 0.514);
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 10px 5px rgba(46, 107, 63, 0.815);
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.login {
+  margin: 30px 55px;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+}
+span a {
+  color: rgba(34, 94, 50, 0.514);
+  text-shadow: 0px 0px 1px rgba(93, 226, 130, 0.89);
+  cursor: pointer;
+}
 
-main{
-    display: flex;
-    background:linear-gradient( rgba(13, 36, 19, 0.815), rgb(159, 159, 172));
-}
-.logo{
-    padding: 10px;
-    background: #1b19198a;
-    position: relative;
-    top: 20%;
-    text-align: center;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--logo-font);
-}
-.s-wrapper{
-    padding: 5px;
-    position: absolute;
-    bottom: 20px;
-    background-color: #1b1919d7;
-    left: 20%;
-    font-size: 1.2rem;;
-
-}
- a {
-    color: white;
-    font-size: 1.2rem;
-}
-img{
-    height: 150px;
-}
-.left-side{
-    font-family: var(--primary-font);
-    color: white;
-    position: relative;
-    width: 40%;
-    height: 100vh;
-    background: url(lexi-laginess-XYfjIT9c01Q-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.right-side{
-    font-family: var(--primary-font);
-    width:60%;
-    color: white;
-}
-.some-text{
-    margin: 50px;
-    font-size: 2rem;
-}
-h2{
-    text-align: center;
-}
