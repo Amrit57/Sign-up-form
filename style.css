@@ -196,6 +196,7 @@ span a {
     margin: 5px auto;
     width: 120px;
     padding: 5px;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 500px) {
@@ -221,9 +222,43 @@ span a {
     font-size: 0.5rem;
   }
   img {
-    height: 80px;
+    height: 50px;
   }
   .right-side {
     width: 100%;
   }
+}
+@media(max-width:360px){
+    main{
+        height: 100%;
+    }
+    .some-text{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+    .login{
+        font-size: 0.8rem;
+    }
+    .login a{
+        font-size: 0.8rem;
+    }
+    form div{
+        margin-left: 112px ;
+        padding: 0;
+    }
+    form{
+       display: block;
+       margin:10px auto;
+       width: 100%;
+    }
+    label{
+        margin: auto;
+        text-align: center;
+    }
+    button{
+        width: 100px;
+        margin-top: 10px;
+    }
 }
